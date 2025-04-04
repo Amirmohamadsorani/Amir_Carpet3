@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 04, 2025 at 05:25 PM
+-- Generation Time: Apr 04, 2025 at 05:19 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -24,29 +24,28 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `carpet`
+-- Table structure for table `sellform`
 --
 
-CREATE TABLE `carpet` (
-  `username` varchar(20) NOT NULL,
-  `email` varchar(25) NOT NULL,
-  `password` int(8) NOT NULL,
-  `repassword` int(8) NOT NULL,
-  `admin` tinyint(1) NOT NULL
+CREATE TABLE `sellform` (
+  `sell_id` int(10) DEFAULT NULL,
+  `username` varchar(30) NOT NULL,
+  `orderdate` int(11) NOT NULL,
+  `id` int(10) NOT NULL,
+  `meter` int(10) NOT NULL,
+  `ghymat` int(20) NOT NULL,
+  `mobile` int(11) NOT NULL,
+  `address` varchar(400) NOT NULL,
+  `email` varchar(20) NOT NULL,
+  `carpet_name` varchar(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `carpet`
+-- Dumping data for table `sellform`
 --
 
-INSERT INTO `carpet` (`username`, `email`, `password`, `repassword`, `admin`) VALUES
-('dfdfdf', 'amiam@gmail.com', 147, 177, 0),
-('amir', 'amiam@gmail.com', 123, 123, 0),
-('ali', 'amiam5311@gmail.com', 123, 123, 0),
-('admin', 'dfdfdggfg@gmail.com', 1234, 1234, 1),
-('amir1', ' afdsf@gmail.com', 123, 123, 1),
-('ali', 'amiam5311@gmail.com', 1234, 1234, 0),
-('hgihuiui', 'amiam5311@gmail.com', 21651, 16161, 0);
+INSERT INTO `sellform` (`sell_id`, `username`, `orderdate`, `id`, `meter`, `ghymat`, `mobile`, `address`, `email`, `carpet_name`) VALUES
+(NULL, 'علی پیرمردایان', 0, 0, 100, 15000000, 2147483647, 'شیراز', 'amiam5311@gmail.com', 'پونه');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
