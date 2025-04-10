@@ -2,15 +2,6 @@ body{
     direction: rtl;
 
 }
-.header{
- text-align: center;
-justify-content: center;
-background-color: rgb(70, 71, 64);
-border-radius: 10px;
-display: block;
-font-size: 50px;
-color: aliceblue;
-}
 .main{
 background-color: rgb(78, 76, 76);
 border-radius: 30px;
@@ -204,3 +195,74 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 .sd{
     margin: 150px;
 }
+.header {
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+
+    z-index: 1;
+  }
+  
+  .header-content {
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+  }
+  .cta-button {
+margin-right: 38%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    border-style: inset;
+    border-color: black;
+
+  }
+
+  .cta-button:hover {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+  }
+
+  .cta-button:focus {
+    outline: none;
+  }
+  .cta-button2 {
+    margin-right: 35px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        padding: 15px 30px;
+        font-size: 1.2rem;
+        border-radius: 30px;
+        text-decoration: none;
+        border-style: inset;
+        border-color: black;
+    
+      }
+    
+      .cta-button2:hover {
+        background-color: #000000;
+        color: rgb(255, 255, 255);
+      }
+    
+      .cta-button2:focus {
+        outline: none;
+        
+      }

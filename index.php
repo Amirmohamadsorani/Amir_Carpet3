@@ -2,82 +2,18 @@
 <?php
 include("tag_a.php")
 ?>
-
+  <header class="header" class="bg-light text-dark pt-4 animate__animated animate__fadeInUp" >
+    <div class="header-content" >
+      <div class=" animate__animated animate__fadeInLeft animate__delay-1s">
+        <h1>بهترین موکت‌ها برای منزل شما</h1>
+        <p>با ما تجربه‌ای متفاوت از خرید موکت‌های با کیفیت داشته باشید</p>
 </br>
-</br>
-<?php
-$a=mysqli_connect("localhost","root","","amir");
-$b=mysqli_query($a,"SELECT * FROM `mahsol`");
-mysqli_close($a);
-?>
-<table class="table table-striped-columns" >
-  <?php
-  $counter = 0;
-$row=mysqli_fetch_array($b);
-            while($row)
-            {
-              $counter++; ?>
-              
-  <td class="td01" >
-  
-    <h4> <?php echo($row["name"]);?></h4>
-    <a href="product_detail.php?id=<?php echo($row["id"]);?>">
-      <img src="<?php echo($row["imageurl"]); ?>" class="aks" class="img-fluid"  >
-    </a>
-            </br>
- <span> قیمت :<?php echo($row["ghymat"]);?> &nbsp; ریال</span>
-            </br>
-<span>توضیحات : <?php echo($row["explane"]);?></span></br>
-<a href="product_detail.php?id=<?php echo($row["id"]);?>" class="we">توضیحات تکمیلی و ثبت سفارش </a></br>
-  </td>
-  <?php
-             $row=mysqli_fetch_array($b);           
-if($counter % 3 == 0)
-  echo("</tr><tr>");
-            }
-if($counter % 3 != 0)
-{ echo("</br>");
-  echo("</tr>");
- 
-}
-            ?>
-                   
-                    </table>
-<footer>
-    <div class="shadow p-3 mb-5 bg-body-tertiary rounded">
-   <div class="row justify-content-center">
-       <div class="col-md5 text-center">
-       
-           <p>
-             برای نصب و اجرای انواع موکت با شماره زیر تماس بگیر و از مشاوره رایگان ما بهره مند شوید
-           </p>
-           <p>
-                شماره تلفن : 09309161300
-            </p>
-               <a href="#">
-                   <i class="fab fa-twitter-square">
+        <a href="index2.php" class="cta-button2">مشاهده محصولات</a>
+      </div>
+    </div>
+  </header>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
-                   </i>
-                   <i class="fab fa-instagram">
 
-                   </i>
-                   <i class="fab fa-facebook">
-
-                   </i>
-                   <i class="fab fa-youtube">
-
-                   </i>
-               </a>
-
-               <hr class="footer-hr">
-               <p>
-                   استفاده از مطالب سایت تنها با درج لینک مستقیم به آن مطلب مجاز است
-
-            </p>
-       </div>
-   </div>
-</div>
-</footer>
-</div>
-</body>
-</html>

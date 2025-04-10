@@ -11,7 +11,7 @@ include("tag_a.php")
                     </br>
                         <h2 class='alert alert-success' role='alert'>حساب کاربری با موفقیت ساخته شد</h2>
                         <hr class="divider"/>
-                        <a class="btn btn-primary btn-xl" href="index.php">بازگشت به صفحه اصلی</a>
+                        <a class="btn btn-primary btn-xl" href="index2.php">بازگشت به صفحه اصلی</a>
                         </br>
                         </br>
                     </div>

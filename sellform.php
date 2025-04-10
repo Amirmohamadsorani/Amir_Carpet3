@@ -1,37 +1,34 @@
 <?php
 include("tag_a.php")
 ?>
+<?php
+$id=$_GET["id"];
+$a=mysqli_connect("localhost","root","","amir");
+$b=mysqli_query($a,"SELECT * FROM `mahsol` WHERE `id`=$id;");
+mysqli_close($a);
+$row=mysqli_fetch_array($b);
+            while($row)
+            {
+            ?>
+    </br>
+    </br>
+    </br>
 <form action="sellform_actoin.php" method="POST" enctype="multipart/form-data"></br>
 </br>
 </br>
 <form class="row g-3">
   <div class="col-md-6">
     <label for="inputEmail4" class="form-label">نام موکت</label>
-    <select id="inputState" class="form-select" name="carpet_name">
-      <option selected>انتخاب کنید</option>
-      <option>کات بی</option>
-      <option>شبنم</option>
-      <option>پونه</option>
-      <option>زیبا</option>
-      <option>الماس</option>
-      <option>یاس</option>
-      <option>صنوبر</option>
-      <option>ونوس</option>
-      <option>دالیا</option>
-      <option>لیندا</option>
-      <option>یاسمن</option>
-      <option>راش</option>
-      <option>پتینه</option>
-      <option>افرا</option>
-      <option>خزان</option>
-      <option>باران</option>
-      <option>نیلوفر</option>
-      <option>پامچال</option>
-      <option>زیبا اسپورت</option>
-      <option>زیبا</option>
-      <option>نعنا</option>
-    </select>
+    <input type="text" class="form-control" id="inputPassword4" name="carpet_name" <?php echo($row["name"]);?> readonly>
   </div>
+  <div class="col-md-4">
+    <label for="inputState" class="form-label">قیمت محصول</label>
+    <input type="text" class="form-control" id="inputCity" name="ghymat" <?php echo($row["ghymat"]);?> readonly>  
+  </div>
+  <?php
+  $row=mysqli_fetch_array($b);
+}
+?>
   <div class="col-md-6">
     <label for="inputPassword4" class="form-label">نام و نام خانوادگی</label>
     <input type="text" class="form-control" id="inputPassword4" name="username">
@@ -39,10 +36,6 @@ include("tag_a.php")
   <div class="col-md-4">
     <label for="inputState" class="form-label">متراژ موکت (متر مربع)</label>
     <input type="text" class="form-control" id="inputCity" name="meter">
-  </div>
-  <div class="col-md-4">
-    <label for="inputState" class="form-label">قیمت محصول</label>
-    <input type="text" class="form-control" id="inputCity" name="ghymat">  
   </div>
   <div class="col-md-4">
     <label for="inputState" class="form-label">شماره تماس</label>
@@ -64,10 +57,12 @@ include("tag_a.php")
       </label>
     </div>
   </div>
+</br>
   <div class="col-12">
     <button type="submit" class="btn btn-primary">ثبت سفارش</button>
   </div>
 </form>
+
 <?php
 include("footer2.html");
 ?>

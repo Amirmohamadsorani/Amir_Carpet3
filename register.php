@@ -1,21 +1,43 @@
 <?php
 include("tag_a.php")
 ?> 
-<form action="action_register.php" method="post">
-  <div class="container">
-    <label for="username"><b class="label_text">نام کاربری *</b></label><br>
-    <input class="re" type="text" placeholder="وارد کردن نام کابری" name="username" required> <br>
+</br>
+</br>
+</br>
+</br>
 
-    <label for="email"><b class="label_text">ایمیل *</b></label><br>
-    <input class="re" type="email" placeholder="وارد کردن ایمیل" name="email" required><br>
+  <div class="mb-3 row">
+    <label for="inputPassword" class="col-sm-2 col-form-label">نام کاربری</label>
+    <div class="col-sm-8">
+      <input type="password" class="form-control" id="inputPassword" name="username">
+    </div>
+  </div>
 
-    <label for="passw"><b class="label_text">رمز عبور *</b></label><br>
-    <input class="re" type="password" placeholder="وارد کردن رمز عبور" name="passw" required><br>
+  <div class="mb-3 row">
+    <label for="inputPassword" class="col-sm-2 col-form-label">ایمیل</label>
+    <div class="col-sm-8">
+      <input type="password" class="form-control" id="inputPassword" name="email">
+    </div>
+  </div>
 
-    <label for="repassw"><b class="label_text">تکرار رمز عبور *</b></label><br>
-    <input class="re" type="password" placeholder="تکرار رمز عبور" name="repassw" required><br>
+  <div class="mb-3 row">
+    <label for="inputPassword" class="col-sm-2 col-form-label">رمز عبور</label>
+    <div class="col-sm-8">
+      <input type="password" class="form-control" id="inputPassword" name="passw">
+      <div id="passwordHelpBlock" class="form-text">
+  پسور شما باید بین 8-20 کارکتر باشد , در پسورد از فضای خالی استفاده نکنید , بهتره ار حروف انگلیسی بزرگ استفاده کنید
+</div>
+    </div>
+  </div>
 
-    <button class="button2"  class="button" type="submit">ورود</button>
+  <div class="mb-3 row">
+    <label for="inputPassword" class="col-sm-2 col-form-label">تکرار رمز عبور</label>
+    <div class="col-sm-8">
+      <input type="password" class="form-control" id="inputPassword" name="repassw">
+    </div>
+  </div>
+
+    <button class="button2"  class="button" type="submit">ثبت نام</button>
   </div>
 
 </form>

@@ -24,7 +24,7 @@ include("tag_a.php")
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 col-xl-6 text-center">
                         <hr class="divider" />
-                        <a class="btn btn-primary btn-xl" href="index.php">بازگشت به صفحه اصلی</a>
+                        <a class="btn btn-primary btn-xl" href="index2.php">بازگشت به صفحه اصلی</a>
                     </div>
                 </div>
             </div>
