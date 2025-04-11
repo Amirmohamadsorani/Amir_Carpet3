@@ -22,9 +22,11 @@ $row=mysqli_fetch_array($b);
  <span class="p"> قیمت : <?php echo($row["ghymat"]);?> &nbsp;ریال</span>
 <p class="p">توضیحات : <?php echo($row["explane"]);?></p class="p">
 <a href="sellform.php?id=<?php echo($row["id"]);?>" class="cta-button">برای خرید محصول کلیک کنید</a></br>
+</br>
+</br>
   <?php
              $row=mysqli_fetch_array($b);   
 
             }
-            include("footer_comment.html");
+            include("footer2.html");
 ?>

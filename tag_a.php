@@ -16,10 +16,10 @@
 <body>
         <div>
         
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <nav class="navbar navbar-expand-lg bg-dark-subtle fixed-top nav_back" >
                 <a href="#" class="navbar-brand">
                 </a>
-                <a class="navbar-brand" href="index2.php">فروشگاه موکت امیر کارپت</a>
+                <a class="navbar-brand" href="index.php">فروشگاه موکت امیر کارپت</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -28,38 +28,33 @@
                     <ul class="navbar-nav mr-auto">
                           <?php if(isset($_SESSION["login"])){ ?>
                           <li class="nav-item">
-                           <a class="nav-link " href="logout.php">| خروج |</a>
+                           <a class="nav-link " href="logout.php"> خروج </a>
                           </li>
                           <?php } else { ?>
                             <li class="nav-item">
-                           <a class="nav-link " href="register.php">| ثبت نام |</a>
+                           <a class="nav-link " href="register.php"> ثبت نام </a>
                           </li>
                             <li class="nav-item">
-                           <a class="nav-link " href="login.php">| ورود |</a>
+                           <a class="nav-link " href="login.php"> ورود </a>
                           </li>
 
                            <?php } ?>
                            <li class="nav-item">
-                            <a class="nav-link " href="sellform.php">| فرم خرید |</a>
+                            <a class="nav-link " href="sellform.php"> فرم خرید </a>
                            </li>
                            <li class="nav-item">
-                               <a class="nav-link " href="index2.php">|  بازگشت به صفحه اصلی |</a>
+                               <a class="nav-link " href="index2.php">  بازگشت به صفحه اصلی </a>
                             </li>
                             <?php if(isset($_SESSION["admin"]) && $_SESSION["admin"]==true){ ?>
                                 <li class="nav-item">
-                                    <a class="nav-link " href="citynew.php">|+|</a>
+                                    <a class="nav-link " href="citynew.php">محصول جدید</a>
                                     <?php }else{
-                                        
                                     } ?>
-                                                                <li class="nav-item">
-                           <a class="nav-link " href="first.php">| dfdf |</a>
-                          </li>
-
 <?php if(isset($_SESSION["admin"]) && $_SESSION["admin"]==true){ ?>
-    <li class="nav-item"><a class="nav-link " href="menu_mahsol.php">| مدیریت |</a></li>
+    <li class="nav-item"><a class="nav-link " href="menu_mahsol.php">مدیریت </a></li>
     </li>
     <li class="nav-item">
-     <a class="nav-link " href="sellform_panel.php">| مشخصات محصولات فروخته شده |</a>
+     <a class="nav-link " href="sellform_panel.php"> مشخصات محصولات فروخته شده </a>
     </li>
     <?php }else{
                 

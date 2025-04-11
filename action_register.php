@@ -11,7 +11,12 @@ include("header2.php");
     mysqli_query($c,"INSERT INTO `carpet`(`username`, `email`, `password`, `repassword`) VALUES
     ('$username','$email','$password','$repassword');");
     mysqli_close($c);
-?>
+    if ($row) {
+        header("Location: header2.php?msg=success");
+    } else {
+        header("Location: header2.php?msg=error");
+    }
+        ?>
 <?php
 include("footer2.html");
 ?>

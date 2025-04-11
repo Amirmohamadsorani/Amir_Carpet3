@@ -4,7 +4,7 @@ include("tag_a.php")
 ?>
   <header class="header" class="bg-light text-dark pt-4 animate__animated animate__fadeInUp" >
     <div class="header-content" >
-      <div class=" animate__animated animate__fadeInLeft animate__delay-1s">
+      <div class=" animate__animated animate__fadeInLeft animate__delay-0.5s">
         <h1>بهترین موکت‌ها برای منزل شما</h1>
         <p>با ما تجربه‌ای متفاوت از خرید موکت‌های با کیفیت داشته باشید</p>
 </br>

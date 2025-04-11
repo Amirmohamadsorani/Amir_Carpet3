@@ -5,7 +5,7 @@ include("tag_a.php")
 </br>
 </br>
 </br>
-
+<form action="action_register.php" method="post">
   <div class="mb-3 row">
     <label for="inputPassword" class="col-sm-2 col-form-label">نام کاربری</label>
     <div class="col-sm-8">
@@ -36,10 +36,8 @@ include("tag_a.php")
       <input type="password" class="form-control" id="inputPassword" name="repassw">
     </div>
   </div>
-
     <button class="button2"  class="button" type="submit">ثبت نام</button>
   </div>
-
 </form>
 <?php
 include("footer2.html");

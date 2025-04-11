@@ -10,9 +10,6 @@ $row=mysqli_fetch_array($b);
             while($row)
             {
             ?>
-    </br>
-    </br>
-    </br>
 <form action="sellform_actoin.php" method="POST" enctype="multipart/form-data"></br>
 </br>
 </br>

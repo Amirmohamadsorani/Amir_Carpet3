@@ -154,7 +154,7 @@ button:hover {
 }
 .nav_text {
     background-color: #bdca70;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     border: none;
     cursor: pointer;
 }
@@ -188,7 +188,7 @@ border: 10px;
     height: 150px;
 }
 .we{
-    text-decoration: none;
+text-decoration: none;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
@@ -266,3 +266,15 @@ margin-right: 38%;
         outline: none;
         
       }
+      .form_text{
+        font-size: 20px;
+
+      }
+      .nav_back:hover {
+        color: #000000;
+        opacity: 5;
+    }
+    .nav_back {
+        opacity: 0.8;
+        color: #000000;
+    }
